@@ -1,0 +1,46 @@
+//import axios from 'axios';
+//import react, {useState, useEffect} from "react";
+
+// interface Roadmap1 {
+//   id?: any | null,
+//   title: string,
+//   year: string,
+//   quarter: string,
+//   status: string
+// }
+
+//export async function roadmaps() {
+  // const [roadmaps, setRoadmaps] = useState([])
+  // useEffect( () => {
+  //   axios.get('http://localhost:3000/api/v1/roadmaps/').then( (response) => 
+  //   {
+  //         console.log(response.data);
+  //         setRoadmaps(response.data);
+  //   }
+  //   ).catch((error) =>{
+  //       alert(error)
+  //     })
+  // }, [])
+  
+
+  //   axios.get(
+  //     'http://localhost:3000/api/v1/roadmaps/'
+  //   ) .then(function (response) {
+  //     console.log(response.data);
+  //     return new Array(response.data);
+  // })
+//   axios.get<Roadmap[]>(
+//     'http://localhost:3000/api/v1/roadmaps/'
+
+//   ) .then(function (response) {
+//     console.log(response.data);
+//     return new Array(response.data);
+// })
+//   .catch(function (error) {
+//       console.log(error);
+//   });  
+
+
+//}
+
+//export default roadmaps
