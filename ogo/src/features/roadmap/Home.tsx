@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 // import { BrowserRouter } from 'react-router-dom';
- import {Roadmaps} from '../../features/roadmap/Roadmaps';
+import {Roadmaps} from '../../features/roadmap/Roadmaps';
 import {Roadmap, AddRoadmap, EditRoadmap} from '../../features/roadmap/Roadmap';
 
 

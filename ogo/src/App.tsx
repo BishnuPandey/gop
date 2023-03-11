@@ -1,6 +1,6 @@
 import React from 'react';
 //import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
+//import { Counter } from './features/counter/Counter';
 import './App.css';
 import { Roadmaps } from './features/roadmap/Roadmaps';
 import { Home } from './features/roadmap/Home';
@@ -13,7 +13,7 @@ import { Home } from './features/roadmap/Home';
       <div className="container">
          <div id="qtop">
              <div id="roadmaps"><Home /></div>
-             <div id="team_goals">team-goals <Counter /></div>
+             <div id="team_goals">team-goals</div>
          </div>
          <div id="qbottom">
              <div id="personal_goals">personal-goals</div>
