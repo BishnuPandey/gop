@@ -8,8 +8,8 @@
 /.bundle
 
 # Ignore lock files
-/Gemfile.lock
-/package-lock.json
+*.lock
+*-lock.json
 
 # Ignore all logfiles and tempfiles.
 /log/*

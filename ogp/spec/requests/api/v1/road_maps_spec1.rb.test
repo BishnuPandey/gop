@@ -1,0 +1,39 @@
+require 'swagger_helper'
+
+RSpec.describe 'api/v1/road_maps', type: :request do
+	path 'api/v1/road_maps' do
+		get 'Retrive road_maps' do 
+			tags 'Roadmaps'
+			produces 'application/json'
+
+			  response '200', 'Roadmaps found' do
+		        schema type: :object,
+		          properties: {
+		            id: { type: :integer },
+		            title: { type: :string },
+		            year: { type: :integer},
+		            quarter: { type: :integer },
+		            status: { type: :string }
+		          },
+		          required: [ 'id', 'title', 'year', 'quarter' ]
+
+				let(:id)  { Roadmap.create(title: 'test', year: '2023', quarter: '2', status:nil).id }
+				run_test!
+		     end
+		end 
+
+		post('create roadmaps') do
+	      response(200, 'successful') do
+
+	        after do |example|
+	          example.metadata[:response][:content] = {
+	            'application/json' => {
+	              example: JSON.parse(response.body, symbolize_names: true)
+	            }
+	          }
+	        end
+	        run_test!
+	      end
+	    end
+	end
+end
