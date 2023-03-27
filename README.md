@@ -38,6 +38,15 @@ OGP - API service
  	rake db:seed
  	rails s
 
+ 5. Review and Testing
+ 	https://semaphoreci.com/blog/rubocops
+ 	bundle exec rubocop --format offenses
+ 	bundle exec rubocop -a
+
+    brakeman
+
+    rapi_doc #https://github.com/phuc/rapi_doc
+
 
  OGO - Frontend components
 
@@ -74,3 +83,5 @@ OGP - API service
  	sudo apt install npm
 
 
+GitHub PR template
+	https://github.com/stevemao/github-issue-templates

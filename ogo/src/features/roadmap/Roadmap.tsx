@@ -56,7 +56,7 @@ export const EditRoadmap = () => {
     return <div>Edit Page</div>
 }
 
-export const deleteRoadmap = (id: any) => {
+export const DeleteRoadmap = (id: any) => {
     axios.delete('http://localhost:3000/api/v1/roadmaps/'+id)
     .then( (response) => {
                 console.log('Deleted successfully')
@@ -90,7 +90,7 @@ export function Roadmap(){
     <NavLink to="/">Back</NavLink> | 
     <NavLink to="/roadmaps/addRoadmap">Add</NavLink> |
     <NavLink to={"/roadmaps/editRoadmap/"+roadmap.id}>Edit</NavLink> |
-    <button onClick={()=>deleteRoadmap(roadmap.id)}>Delete</button>
+    <button onClick={()=>DeleteRoadmap(roadmap.id)}>Delete</button>
     <p color="red">{message ? message : null}</p>
     </div>
             
